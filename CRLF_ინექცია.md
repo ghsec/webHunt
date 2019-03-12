@@ -1,12 +1,12 @@
 ### CRLF ინექცია
 
-#### Detects Regexp in response
+#### Detects Regexp in response:
 ```
 Set-Cookie:\scrlf=injection
 ```
 
 
-#### request payloads: source: 
+#### request payloads:
 
 ```
 /%%0a0aSet-Cookie:crlf=injection
