@@ -1,6 +1,6 @@
 ### CRLF ინექცია
 
-#### Detects Regexp in response:
+#### Regexp 'Detect in response':
 ```
 Set-Cookie:\scrlf=injection
 ```
