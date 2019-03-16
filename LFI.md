@@ -59,10 +59,9 @@ C:\\boot.ini%00.ext
 %SYSTEMROOT%\\win.ini%00.ext
 ```
 ვაკვირდებით respons და ვეძებთ 
+##### Regexp:
 ```
-root:x
-for 16-bit app support
-boot loader
+root:x|for 16-bit app support|boot loader
 ```
 
 სასურველი payload-ების ვორდლისტი
