@@ -1,4 +1,4 @@
-### CRLF ინექცია
+### CRLF Injection
 
 #### Regexp 'Detect in response':
 ```
