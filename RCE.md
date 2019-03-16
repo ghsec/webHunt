@@ -1,7 +1,7 @@
 ### RCE:
 
 ##### Payloads:
-https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Command%20Injection/Intruder/command_exec.txt
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Command%20Injection/Intruder
 
 ##### Regexp | Keywords
 response-ში ვეძებთ
