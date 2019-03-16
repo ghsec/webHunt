@@ -7,19 +7,11 @@ Detect Payload: abc.txt
 
 ##### Java Errors:
 ```
-java.io.FileNotFoundException
-java.lang.Exception
-java.lang.IllegalArgumentException
-java.net.MalformedURLException
+java\.io\.FileNotFoundException|java\.lang\.Exception|java\.lang\.IllegalArgumentException|java\.net\.MalformedURLException
 ```
 ##### PHP Errors:
 ```
-fread\\(\\)
-for inclusion \'\\(include_path=
-Failed opening required
-<b>Warning</b>:  file\\('
-<b>Warning</b>:  file_get_contents\\('
-open_basedir restriction in effect
+Warning: include\(|Warning: unlink\(|for inclusion \(include_path=|fread\(|Failed opening required|Warning: file_get_contents\(|Fatal error: require_once\(|Warning: file_exists\(
 ```
 
 ##### Unix Payloads:
