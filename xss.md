@@ -1,6 +1,6 @@
-#XSS
+# XSS
 
-###Scope:
+### Scope:
 ```
 GET|POST parameters
 Path
