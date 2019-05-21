@@ -1,5 +1,5 @@
 ### Sqli Error
-ვტესტავთ ყველა heders, Cookie-ებს და GET|POST პარამეტრებს
+Injection points - heders|Cookie|path,  GET|POST parameters
 
 ### Error Regexps
 ```
