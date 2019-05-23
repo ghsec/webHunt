@@ -3,5 +3,5 @@
 Possible Open Redirect | SSRF detection Regexp
 
 ```
-=(http(s)?:\/\/w+|aHR0)
+(=|%3d)(http(s)?:\/\/\w+|aHR0)
 ```
