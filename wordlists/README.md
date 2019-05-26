@@ -1,4 +1,4 @@
 # Wordlists for
-- XSS payloads by S0md3v 
-- Content discovery wordlist colected from other resources
+- XSS payloads by s0md3v 
+- Content discovery wordlist collected from other sources
 - parameter wordlis collected from other sources
