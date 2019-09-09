@@ -16,4 +16,4 @@ URLS: ```https?://[^\"\\'> ]+```
 
 AMAZON_KEY: ```([^A-Z0-9]|^)(AKIA|A3T|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{12,}```
 
-UPLOAD_FIELDS: ```<input[^>]+type=[\"']?file[\"']?```
+UPLOAD_FIELDS: ```<input[^>]\stype=[\"']?file[\"']?```
