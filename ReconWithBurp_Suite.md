@@ -1,5 +1,4 @@
-# Recon with BurpSuite 
-"სიყვარულით საქართველოდან"
+# Recon with BurpSuite "სიყვარულით საქართველოდან"
 
 ### Download and run
 * Download [Burp Suite](https://portswigger.net/burp/communitydownload)
