@@ -18,4 +18,4 @@ Change domain.com with your domain
 ```https://github.com/search?q="domain.com"```
 
 ### Censys
- 443.https.tls.certificate.parsed.names: domain.com
+```443.https.tls.certificate.parsed.names: domain.com```
