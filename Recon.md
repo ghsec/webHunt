@@ -19,3 +19,6 @@ Change domain.com with your domain
 
 ### Censys
 ```443.https.tls.certificate.parsed.names: domain.com```
+
+### bgp
+```https://bgp.he.net/```
