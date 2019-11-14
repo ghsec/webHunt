@@ -3,7 +3,7 @@
 
 Change "domain.com" with your domain
 
-### ~ crt.sh
+### ~ crt.sh 
 ```$ curl -s https://crt.sh/?q=%25.domain.com\&output=json | jq '.[].name_value' | sort -u | sed 's/"//g' | sed '/^*/d'```
 
 ### ~ certspotter
@@ -51,5 +51,7 @@ Change "domain.com" with your domain
 ## 1.2 Burp Suite
 
 * 1.2.1 [Subdomains to Burpsuite](https://github.com/ghsec/webHunt/blob/master/SubdomainsToBurp.md)
+* 1.2.2 Burp Suite spider
+* 1.2.3 Burp Suite > Find > Extract Subdomains Regex: [Subdomains extracting Regex](https://github.com/ghsec/webHunt/blob/master/SubRegex.md)
 
 
