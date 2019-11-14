@@ -1,4 +1,5 @@
 # Recon
+## Collect Subdomains
 
 Change domain.com with your domain
 
@@ -22,3 +23,15 @@ Change domain.com with your domain
 
 ### bgp
 ```https://bgp.he.net/```
+
+### Amass
+```https://github.com/OWASP/Amass```
+
+```$ amass enum -d domain.com```
+
+### Subfinder 
+```https://github.com/subfinder/subfinder```
+
+```$ ./subfinder -d domain.com -b -w jhaddix_all.txt -t 100```
+
+```jhaddix all.txt: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056```
