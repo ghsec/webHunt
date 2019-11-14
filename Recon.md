@@ -24,6 +24,11 @@ Change domain.com with your domain
 ### bgp
 ```https://bgp.he.net/```
 
+### Findomain
+```https://github.com/Edu4rdSHL/findomain```
+
+```findomain -t domain.com```
+
 ### Amass
 ```https://github.com/OWASP/Amass```
 
