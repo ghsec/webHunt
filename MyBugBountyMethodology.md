@@ -1,6 +1,5 @@
 # 1. Recon
 ## 1.1 Collect Subdomains
-...........................................................................................
 
 Change "domain.com" with your domain
 
@@ -44,6 +43,9 @@ Change "domain.com" with your domain
 
 ### Unique subdomains list
 ```$ cat file1 file2 file3 | sort -u | tee uniqSubdomains```
+
+
+
 
 
 ## 1.2 urp Suite
