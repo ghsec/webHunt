@@ -1,5 +1,5 @@
-# Recon
-## Collect Subdomains
+# 1. Recon
+## 1.1 Collect Subdomains
 
 Change domain.com with your domain
 
