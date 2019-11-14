@@ -1,13 +1,13 @@
 # 1. Recon
 ## 1.1 Collect Subdomains
-
+################################################################################################################################
 Change "domain.com" with your domain
 
 ### ~ crt.sh
-```curl -s https://crt.sh/?q=%25.domain.com\&output=json | jq '.[].name_value' | sort -u | sed 's/"//g' | sed '/^*/d'```
+```$ curl -s https://crt.sh/?q=%25.domain.com\&output=json | jq '.[].name_value' | sort -u | sed 's/"//g' | sed '/^*/d'```
 
 ### ~ certspotter
-```curl -s https://certspotter.com/api/v0/certs\?domain\=domain.com | jq '.[].dns_names[]' | sed 's/\"//g' | sed 's/\*\.//g' | sort -u | grep domain.com```
+```$ curl -s https://certspotter.com/api/v0/certs\?domain\=domain.com | jq '.[].dns_names[]' | sed 's/\"//g' | sed 's/\*\.//g' | sort -u | grep domain.com```
 
 ### ~ Virustotal
 ```https://www.virustotal.com/gui/domain/domain.com/relations```
@@ -40,3 +40,10 @@ Change "domain.com" with your domain
 ```$ ./subfinder -d domain.com -b -w jhaddix_all.txt -t 100```
 
 ```jhaddix all.txt: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056```
+
+### Unique subdomains list
+```$ cat file1 file2 file3 | sort -u | tee uniqSubdomains```
+
+
+## 1.2 urp Suite
+
