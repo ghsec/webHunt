@@ -49,11 +49,10 @@ Change "domain.com" with your domain
 
 
 ## 1.2 Burp Suite
+* 1.2.1 [Recon with Burp](https://github.com/ghsec/webHunt/blob/master/ReconWithBurp_Suite.md)
 
-* 1.2.1 [Subdomains to Burpsuite](https://github.com/ghsec/webHunt/blob/master/SubdomainsToBurp.md)
-* 1.2.2 Burp Suite spider
-* 1.2.3 Burp Suite > Find > Extract Subdomains Regex: [Subdomains extracting Regex](https://github.com/ghsec/webHunt/blob/master/SubRegex.md)
-
-    [Demo Video:](https://www.youtube.com/watch?v=73ieMkV4Ufk&list=PLq8PHzHe7znWfoKfi2ieVVC42_11u4t_C&index=2)
+    [Demo Videos:](https://www.youtube.com/watch?v=-6ck9WhdtPk&list=PLq8PHzHe7znWfoKfi2ieVVC42_11u4t_C)
+    
+   
 
 
