@@ -48,5 +48,8 @@ Change "domain.com" with your domain
 
 
 
-## 1.2 urp Suite
+## 1.2 Burp Suite
+
+* 1.2.1 [Subdomains to Burpsuite](https://github.com/ghsec/webHunt/blob/master/SubdomainsToBurp.md)
+
 
