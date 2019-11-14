@@ -49,9 +49,11 @@ Change "domain.com" with your domain
 
 
 ## 1.2 Burp Suite
-* 1.2.1 [Recon with Burp](https://github.com/ghsec/webHunt/blob/master/ReconWithBurp_Suite.md)
+* 1.2.1 [Export unique subdomains to Burp Suite](https://github.com/ghsec/webHunt/blob/master/SubdomainsToBurp.md)
+                         
+* 1.2.2 [Recon with Burp](https://github.com/ghsec/webHunt/blob/master/ReconWithBurp_Suite.md)
 
-    [Demo Videos:](https://www.youtube.com/watch?v=-6ck9WhdtPk&list=PLq8PHzHe7znWfoKfi2ieVVC42_11u4t_C)
+        [Demo Videos:](https://www.youtube.com/watch?v=-6ck9WhdtPk&list=PLq8PHzHe7znWfoKfi2ieVVC42_11u4t_C)
     
    
 
