@@ -1,40 +1,40 @@
 # 1. Recon
 ## 1.1 Collect Subdomains
 
-Change domain.com with your domain
+Change "domain.com" with your domain
 
-### crt.sh
+### ~ crt.sh
 ```curl -s https://crt.sh/?q=%25.domain.com\&output=json | jq '.[].name_value' | sort -u | sed 's/"//g' | sed '/^*/d'```
 
-### certspotter
+### ~ certspotter
 ```curl -s https://certspotter.com/api/v0/certs\?domain\=domain.com | jq '.[].dns_names[]' | sed 's/\"//g' | sed 's/\*\.//g' | sort -u | grep domain.com```
 
-### Virustotal
+### ~ Virustotal
 ```https://www.virustotal.com/gui/domain/domain.com/relations```
 
-### SecurityTrails
+### ~ SecurityTrails
 ```https://securitytrails.com/list/apex_domain/domain.com```
 
-### Github
+### ~ Github
 ```https://github.com/search?q="domain.com"```
 
-### Censys
+### ~ Censys
 ```443.https.tls.certificate.parsed.names: domain.com```
 
-### bgp
+### ~ bgp
 ```https://bgp.he.net/```
 
-### Findomain
+### ~ Findomain
 ```https://github.com/Edu4rdSHL/findomain```
 
 ```findomain -t domain.com```
 
-### Amass
+### ~ Amass
 ```https://github.com/OWASP/Amass```
 
 ```$ amass enum -d domain.com```
 
-### Subfinder 
+### ~ Subfinder 
 ```https://github.com/subfinder/subfinder```
 
 ```$ ./subfinder -d domain.com -b -w jhaddix_all.txt -t 100```
