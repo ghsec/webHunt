@@ -3,7 +3,7 @@
 Possible Open Redirect | SSRF detection Regexp
 
 ```
-(=|%3D)(http(s)?(%3A%2F%2F|%253A%252F%252F|:\/\/)|aHR0c)|PWh0dH
+(=|%3D|%253D)(http(s)?(%3A%2F%2F|%253A%252F%252F|:\/\/)|aHR0c)|PWh0dH
 ```
 ### Detect Open Redirect in response
 
