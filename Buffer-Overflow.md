@@ -10,7 +10,7 @@ Example: ```['A' * payload_len for payload_len in [65, 257, 513, 1025, 2049]]```
 ### Errors
 ##### Regexp:
 ```
-\*\*\* stack smashing detected \*\*\*|Backtrace|Memory map
+stack smashing detected |Backtrace|Memory map
 ```
 
 ```
