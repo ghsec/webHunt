@@ -52,7 +52,7 @@ C:\\boot.ini%00.ext
 search in response 
 ##### Regexp:
 ```
-root:x|for 16-bit app support|boot loader
+root:|for 16-bit app support|boot loader
 ```
 Payloads:
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion/Intruders
