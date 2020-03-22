@@ -1,7 +1,7 @@
 # Api Key
 Detect Api key in request | response body
 
-Whow to use api key: https://github.com/streaak/keyhacks
+How to use api key: https://github.com/streaak/keyhacks
 
 #### Burp regexp
 ```
