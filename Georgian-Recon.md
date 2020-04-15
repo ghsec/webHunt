@@ -30,6 +30,8 @@
 
 13.[DirSearch](https://github.com/maurosoria/dirsearch)
 
+14.[Httprobe](https://github.com/tomnomnom/httprobe)
+
 
 ## Wordlists: 
 * [RobotsDisallowed](https://github.com/danielmiessler/RobotsDisallowed)
@@ -66,4 +68,11 @@
 
 ```sed 's/A.*//' result.txt | sed 's/CN.*//' | sed 's/\..$//' > massdns```
 
+```cat uniq massdns | sort -u | tee uniq.txt```
+
+შესაძლებელი კიდე იგივე ოპერაცია გავიმეოროთ goaltdns-თან ერთად ოღონდ word.txt ფაილით.
+
+
+### HttpProbe Live
+```cat uniq.txt | httprobe | tee hosts```
 
