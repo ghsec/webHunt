@@ -37,13 +37,28 @@
 * [content_discovery_nullenc0de](https://gist.github.com/nullenc0de/96fb9e934fc16415fbda2f83f08b28e7)
 * [content_discovery_all](https://gist.github.com/jhaddix/b80ea67d85c13206125806f0828f4d10)
 * [commonspeak2](https://github.com/assetnote/commonspeak2-wordlists)
+* [all.txt](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056)
 
 
 ## Recon Subdomains
-ვქმნით დირექტორიას სადაც შევაგროვებთ შეგროვებულ subdomain-ებს
 
-Owasp Amass : ```amass enum -d DOMAIN -o amass```
+- Owasp Amass : ```amass enum -d DOMAIN -o amass```
 
-Subfinder: ```subfinder -d DOMAIN -o subfinder```
+- Subfinder: ```subfinder -d DOMAIN -o subfinder```
 
+- Findomain: ```findomain -t DOMAIN -o```
+
+- Assetfinder: ```assetfinder DOMAIN | tee assetfinder```
+
+- github-search/github-subdomains.py: ```python3 github-subdomains.py -d DOMAIN -t <Personal access tokens>```
+
+
+### ამოვიღოთ უნიკალური subdomain-ები და შევინახოთ uniq ფაილში.
+```cat amass subdomain DOMAIN.txt assetfinder | sort -u | tee uniq```
+```rm amass subdomain DOMAIN.txt assetfinder```
+
+### დავაგენერიროთ სავარაუდო საბდომენების საბდომენები და დავარეზოლვოთ.
+``` goaltdns -l uniq -w all.txt -o generated```
+```massdns generated -r /massdns/lists/resolvers.txt -t A -o S -w results.txt```
+```sed 's/A.*//' result.txt | sed 's/CN.*//' | sed 's/\..$//' > massdns```
 
