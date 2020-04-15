@@ -39,5 +39,10 @@
 * [commonspeak2](https://github.com/assetnote/commonspeak2-wordlists)
 
 
+## Recon Subdomains
+ვქმნით დირექტორიას სადაც შევაგროვებთ შეგროვებულ subdomain-ებს
+
+Owasp Amass : ```amass enum -d DOMAIN -o amass
+Subfinder: ```subfinder -d DOMAIN -o subfinder```
 
 
