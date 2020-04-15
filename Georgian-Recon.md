@@ -55,10 +55,15 @@
 
 ### ამოვიღოთ უნიკალური subdomain-ები და შევინახოთ uniq ფაილში.
 ```cat amass subdomain DOMAIN.txt assetfinder | sort -u | tee uniq```
+
 ```rm amass subdomain DOMAIN.txt assetfinder```
+
 
 ### დავაგენერიროთ სავარაუდო საბდომენების საბდომენები და დავარეზოლვოთ.
 ``` goaltdns -l uniq -w all.txt -o generated```
+
 ```massdns generated -r /massdns/lists/resolvers.txt -t A -o S -w results.txt```
+
 ```sed 's/A.*//' result.txt | sed 's/CN.*//' | sed 's/\..$//' > massdns```
+
 
