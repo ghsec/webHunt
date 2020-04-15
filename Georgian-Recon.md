@@ -42,7 +42,8 @@
 ## Recon Subdomains
 ვქმნით დირექტორიას სადაც შევაგროვებთ შეგროვებულ subdomain-ებს
 
-Owasp Amass : ```amass enum -d DOMAIN -o amass
+Owasp Amass : ```amass enum -d DOMAIN -o amass```
+
 Subfinder: ```subfinder -d DOMAIN -o subfinder```
 
 
