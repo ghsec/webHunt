@@ -1,4 +1,4 @@
-# Spiderring get request with Gospider
+# Spidering with Gospider
 [Gospider](https://github.com/jaeles-project/gospider)
 
 ### Collect Endpoints
