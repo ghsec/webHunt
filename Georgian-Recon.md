@@ -52,7 +52,7 @@
 
 - Assetfinder: ```assetfinder DOMAIN | tee assetfinder```
 
-- Gobuster: ```gobuster dns -d DOMAIN -w ~/PATH/all.txt -t 250 -o gobuste
+- Gobuster: ```gobuster dns -d DOMAIN -w ~/PATH/all.txt -t 250 -o gobuste```
 
 - github-search/github-subdomains.py: ```python3 github-subdomains.py -d DOMAIN -t <Personal access tokens>```
 
