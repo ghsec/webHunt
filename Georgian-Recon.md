@@ -54,6 +54,9 @@
 
 - github-search/github-subdomains.py: ```python3 github-subdomains.py -d DOMAIN -t <Personal access tokens>```
 
+- https://securitytrails.com/list/apex_domain/DOMAIN ```GREP ან ვიყენებთ API-ს```
+
+- https://subdomainfinder.c99.nl/
 
 ### ამოვიღოთ უნიკალური subdomain-ები და შევინახოთ uniq ფაილში.
 ```cat amass subdomain DOMAIN.txt assetfinder | sort -u | tee uniq```
