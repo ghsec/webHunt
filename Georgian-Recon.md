@@ -52,6 +52,8 @@
 
 - Assetfinder: ```assetfinder DOMAIN | tee assetfinder```
 
+- Gobuster: ```gobuster dns -d DOMAIN -w ~/PATH/all.txt -t 250 -o gobuste
+
 - github-search/github-subdomains.py: ```python3 github-subdomains.py -d DOMAIN -t <Personal access tokens>```
 
 - https://securitytrails.com/list/apex_domain/DOMAIN ```GREP ან ვიყენებთ API-ს```
