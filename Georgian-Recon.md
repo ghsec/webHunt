@@ -59,9 +59,9 @@
 - https://subdomainfinder.c99.nl/
 
 ### ამოვიღოთ უნიკალური subdomain-ები და შევინახოთ uniq ფაილში.
-```cat amass subdomain DOMAIN.txt assetfinder | sort -u | tee uniq```
+```cat * | sort -u | tee uniq```
 
-```rm amass subdomain DOMAIN.txt assetfinder```
+```rm <files>  # ვშლით ყველა ფაილს რომელიც აღარ გვჭირდება, ვტოვებთ მხოლოდ uniq ფაილს```
 
 
 ### დავაგენერიროთ სავარაუდო საბდომენების საბდომენები და დავარეზოლვოთ.
