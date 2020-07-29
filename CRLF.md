@@ -2,7 +2,7 @@
 
 #### Regexp 'Detect in response':
 ```
-^Set-Cookie:\scrlf=injection
+(?m)^Set-Cookie:\scrlf=injection
 ```
 
 
