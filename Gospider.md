@@ -3,6 +3,8 @@
 
 ### Collect Endpoints
 
+Collect URLs and save to file: 
 ```
-gospider -s https://domain.com -d 10 -a -w --blacklist ".(jpg|jpeg|gif|css|tif|tiff|png|ttf|woff|woff2|ico|pdf|woff2|svg|js)" | grep -oP "(http[s]?:\/\/)?((-)?[\w+\.]){1,}domain\.com.*"
+gospider -s http://HOST -d 16 -a -w -c 50 | grep -oP '(http|https)://[^/"].*' | cut -d "]" -f1 | tee OUTPUT_FILE
 ```
+
