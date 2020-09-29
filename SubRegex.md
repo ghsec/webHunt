@@ -1,5 +1,5 @@
 ### Extract Subdomains with burp + regexp
-##### Regexp:
+##### One Liner command
 ```
-(http[s]?:\/\/)?((-)?[\w+\.]){1,20}domain\.com
+cat urls | grep -oP "([a-zA-Z0-9-_]{1,}\.){1,}domian.com" | tr -d "2F" | sort -u
 ```
