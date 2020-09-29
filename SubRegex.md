@@ -1,5 +1,4 @@
 ### Extract Subdomains with burp + regexp
-##### One Liner command
 ```
 ([a-zA-Z0-9-_]{1,}\.){1,}domian\.com"
 ```
