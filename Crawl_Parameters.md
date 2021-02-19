@@ -8,4 +8,4 @@
 ```sudo mv gau /usr/bin```
 
 ### Usage:
-```gau -subs domain.com | grep -oP "(\?|\&)\w+" | tr -d "?|&" | sort -u | tee domain```
+```gau -subs domain.com | grep -oP "(\?|\&)\w+" | tr -d "?|&" | sort -u | tee params```
