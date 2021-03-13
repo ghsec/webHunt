@@ -1,5 +1,11 @@
 Copy this joined regexp and use in burp
 
+Need edit fuzzlist 
+
+### Fuzz List by @1N3
+
+https://github.com/1N3/IntruderPayloads/blob/master/FuzzLists/full_fuzz.txt
+
 ### Detect errors and vulnerabilities 
 
 It is useful detect errors and vulns when fuzz with costum payloads list
