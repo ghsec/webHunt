@@ -1,7 +1,7 @@
 # From .jpg to XSS with S3 Bucket
 
 When it is useful?
-.........................
+
 
 If we found url that load from S3 Bucket image with ```.jpg``` extation and we can takeover this bucket.
 
