@@ -9,3 +9,8 @@
 
 ### Usage:
 ```gau -subs domain.com | grep -oP "(\?|\&)\w+" | tr -d "?|&" | sort -u | tee params```
+
+### GREP 
+greping parameters in response body
+
+```grep -hiroP "<input.*?>" | grep -oP "(?<=name=[\"|\']).*?(?=[\"|\'] )"```
