@@ -13,4 +13,4 @@
 ### GREP 
 greping parameters in response body
 
-```grep -oP "<input.*?>" | grep -oP "name=[\"|']\w+" | sed 's/name="//g' | sort -u```
+```grep -oP "<input.*?>" | grep -oP "name=[\"|'].+" | cut -d "\"" -f2```
