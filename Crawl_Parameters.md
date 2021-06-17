@@ -14,3 +14,34 @@
 greping parameters in response body
 
 ```grep -oP "<input.*?>" | grep -oP "name=[\"|'].+" | cut -d "\"" -f2```
+
+### crawl and Scan
+
+* Add this function in .bashrc file
+
+```
+# Parameter scanner with Jaeles
+checkparam(){
+for i in $(cat $1); do
+        curl -sk "$i" | grep -oP "<input.*?>" | grep -oP "name=[\"|'].+" | cut -d "\"" -f2 | tee params.txt
+        jaeles scan -v -s ~/pro-signatures/ghsec-jaeles-signatures/fuzz-params/xss.yaml -u "$i"
+        rm params.txt
+done
+}
+
+```
+
+* collect urls with your favorite tool. "Burp, gospider, hakrawler"
+* check urls which includer "<input> tag" with ffuf
+
+```
+ffuf -u FUZZ -w urls.txt -mc all -mr "<input.*?>" | awk '{print $1}' | tee crawled.txt
+```
+
+* Scan collected urls, command for terminal
+
+```
+checkparam crawled.txt
+```
+
+*
