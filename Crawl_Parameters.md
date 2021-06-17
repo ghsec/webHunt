@@ -24,7 +24,7 @@ greping parameters in response body
 checkparam(){
 for i in $(cat $1); do
         curl -sk "$i" | grep -oP "<input.*?>" | grep -oP "name=[\"|'].+" | cut -d "\"" -f2 | tee params.txt
-        jaeles scan -v -s ~/pro-signatures/ghsec-jaeles-signatures/fuzz-params/xss.yaml -u "$i"
+        jaeles scan -v -s ~/path_To_Jaeles_Signature/xss.yaml -u "$i"
         rm params.txt
 done
 }
