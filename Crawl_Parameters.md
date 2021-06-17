@@ -34,8 +34,6 @@ done
 * collect urls with your favorite tool. "Burp, gospider, hakrawler"
 * check urls which includer "<input> tag" with ffuf
 
-
-
 ```
 ffuf -u FUZZ -w urls.txt -mc all -mr "<input.*?>" | awk '{print $1}' | tee crawled.txt
 ```
@@ -45,5 +43,3 @@ ffuf -u FUZZ -w urls.txt -mc all -mr "<input.*?>" | awk '{print $1}' | tee crawl
 ```
 checkparam crawled.txt
 ```
-
-*
