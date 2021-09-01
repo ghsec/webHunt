@@ -13,7 +13,7 @@
 ### GREP 
 greping parameters in response body
 
-```grep -oP "<input.*?>" | grep -oP "name=[\"|'].+" | cut -d "\"" -f2```
+```grep -oP "<input.*?>" | grep -oP "name=[\"'].+" | cut -d "\"" -f2```
 
 ### crawl and Scan
 
