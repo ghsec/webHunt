@@ -19,11 +19,15 @@ greping parameters in response body
 
 * Add this function in .bashrc file
 
+First need download and install htmlattribs by tomnomnom from repository
+
+https://github.com/tomnomnom/hacks/tree/master/htmlattribs
+
 ```
 # Parameter scanner with Jaeles
 checkparam(){
 for i in $(cat $1); do
-        curl -sk "$i" | grep -oP "<input.*?>" | grep -oP "name=[\"|'].+" | cut -d "\"" -f2 | tee params.txt
+        curl -sk "$i" | htmlattribs name input | tee params.txt
         jaeles scan -v -s ~/path_To_Jaeles_Signature/xss.yaml -u "$i"
         rm params.txt
 done
@@ -35,7 +39,7 @@ done
 * check urls which includer "<input> tag" with ffuf
 
 ```
-ffuf -u FUZZ -w urls.txt -mc all -mr "<input.*?>" | awk '{print $1}' | tee crawled.txt
+ffuf -u FUZZ -w urls.txt -mc all -mr "<input" | awk '{print $1}' | tee crawled.txt
 ```
 
 * Scan collected urls, command for terminal
