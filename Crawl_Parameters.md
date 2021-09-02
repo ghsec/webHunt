@@ -39,7 +39,7 @@ done
 * check urls which includer "<input> tag" with ffuf
 
 ```
-ffuf -u FUZZ -w urls.txt -mr "<input" | awk '{print $1}' | tee crawled.txt
+ffuf -u FUZZ -w urls.txt -mr "<input" -s | tee crawled.txt
 ```
 
 * Scan collected urls, command for terminal
