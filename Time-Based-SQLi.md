@@ -1,4 +1,13 @@
-### Time Based Sql Injection with ffuf
+## Time Based Sql Injection with ffuf
+Check url list for time based sqli with ffuf
+
+need install ffuf and qsreplace
+
+* ffuf:      ```go get -u github.com/ffuf/ffuf```
+* qsreplace: ```go get -u github.com/tomnomnom/qsreplace```
+
+
+
 
 * Payloads: save this in payloads file
 
