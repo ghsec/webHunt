@@ -8,7 +8,7 @@
 
 ```
 var xhr = new XMLHttpRequest();
-xht.open('GET', 'http://Victim.com/path/file.php', true);
+xhr.open('GET', 'http://Victim.com/path/file.php', true);
 xhr.setRequestHeader('Content-type', 'application/x-www-urlencoded');
 
 xhr.onload = function () {
