@@ -25,6 +25,7 @@ https://github.com/tomnomnom/hacks/tree/master/htmlattribs
 
 ```
 # Parameter scanner with Jaeles
+### Input tag
 checkparam(){
 for i in $(cat $1); do
         curl -sk "$i" | htmlattribs name input | tee params.txt
@@ -47,3 +48,16 @@ ffuf -u FUZZ -w urls.txt -mr "<input" -s | tee crawled.txt
 ```
 checkparam crawled.txt
 ```
+
+
+### js code variable
+
+jsvarxss(){
+	cat urls | grep -vE ".(js$|js\?)" | ffuf -u FUZZ -w - -mr "var [a-zA-Z0-9_-]{1,}" | tee var_urls
+	for i in $(cat var_urls); do
+		curl -sk $i | grep -Eo "var [a-zA-Z0-9_-]{1,}" | cut -d " " -f2 | sort -u | tee params.txt
+		jaeles scan -v -s ~/pentest/pro-signatures/ghsec-jaeles-signatures/fuzz-param/xss.yaml -u "$i"
+		rm params.txt
+	done
+}
+jsvarxss
