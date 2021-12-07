@@ -52,6 +52,7 @@ checkparam crawled.txt
 
 ### js code variable
 
+```
 jsvarxss(){
 	cat urls | grep -vE ".(js$|js\?)" | ffuf -u FUZZ -w - -mr "var [a-zA-Z0-9_-]{1,}" | tee var_urls
 	for i in $(cat var_urls); do
@@ -61,3 +62,4 @@ jsvarxss(){
 	done
 }
 jsvarxss
+```
