@@ -17,3 +17,17 @@ URLS: ```https?://[^\"\\'> ]```
 AMAZON_KEY: ```([^A-Z0-9]|^)(AKIA|A3T|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{12,}```
 
 UPLOAD_FIELDS: ```<input[^>]\stype=[\"']?file[\"']?```
+
+
+### Scan for s3 bucket takeover vuln
+
+#### what you need 
+* golang
+* subfinder or other subdomain collector tool: ```https://github.com/projectdiscovery/subfinder```
+* gospider: ```https://github.com/jaeles-project/gospider```
+* httpx: ```https://github.com/projectdiscovery/httpx```
+* Oneliner terminal command
+
+```
+subfinder -d hackerone.com -silent | httpx -silent | gospider -d 5 --sitemap --robots -w -r --subs | grep "\[aws-s3" | sed 's/\[aws-s3\] - //g' | httpx -silent -mr "NoSuchBucket" | tee s3-bucket-takeover.txt
+```
