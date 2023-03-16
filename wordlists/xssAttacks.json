@@ -4,7 +4,7 @@
 		"properties": {
 			"description": {
 				"type": "string",
-				"example": "Inject this string, and in most cases where a script is vulnerable with no special XSS vector requirements the word "XSS" will pop up.  You'll need to replace the "&" with "%26" if you are submitting this XSS string via HTTP GET or it will be ignored and everything after it will be interpreted as another variable.  Tip: If you're in a rush and need to quickly check a page, often times injecting the deprecated "<PLAINTEXT>" tag will be enough to check to see if something is vulnerable to XSS by messing up the output appreciably."
+				"example": "Inject this string, and in most cases where a script is vulnerable with no special XSS vector requirements the word \"XSS\" will pop up.  You'll need to replace the \"&\" with \"%26\" if you are submitting this XSS string via HTTP GET or it will be ignored and everything after it will be interpreted as another variable.  Tip: If you're in a rush and need to quickly check a page, often times injecting the deprecated \"<PLAINTEXT>\" tag will be enough to check to see if something is vulnerable to XSS by messing up the output appreciably."
 			},
 			"name": {
 				"type": "string",
@@ -12,7 +12,7 @@
 			},
 			"vector": {
 				"type": "string",
-				"example": "';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>=&{}"
+				"example": "';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>\">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>=&{}"
 			}
 		}
 	},
