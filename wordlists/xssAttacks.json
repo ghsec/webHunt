@@ -1,14 +1,21 @@
 "definitions": {
-	"0": {
-		"type": "object",
-		"properties": {
-			"name": {
-				"type": "string",
-				"example": "Content Replace"
-			},
-			"vector": {
-				"type": "string",
-				"example": "<A HREF=http://www.gohttp://www.google.com/ogle.com/>XSS</A>"
+	"url": {
+		"type": "string",
+		"example": "https://xss.smarpo.com/test.yaml"
+	},
+	"urls": {
+		"type": "array",
+		"items": {
+			"type": "object",
+			"properties": {
+				"url": {
+					"type": "string",
+					"example": "https://xss.smarpo.com/test.yaml"
+				},
+				"name": {
+					"type": "string",
+					"example": "Foo"
+				}
 			}
 		}
 	}
