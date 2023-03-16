@@ -1,3 +1,4 @@
+{"openapi":"3.0.0"
 [
    {
       "description" : "Inject this string, and in most cases where a script is vulnerable with no special XSS vector requirements the word \"XSS\" will pop up.  You'll need to replace the \"&\" with \"%26\" if you are submitting this XSS string via HTTP GET or it will be ignored and everything after it will be interpreted as another variable.  Tip: If you're in a rush and need to quickly check a page, often times injecting the deprecated \"<PLAINTEXT>\" tag will be enough to check to see if something is vulnerable to XSS by messing up the output appreciably.",
@@ -564,4 +565,4 @@
       "name" : "Content Replace",
       "vector" : "<A HREF=\"http://www.gohttp://www.google.com/ogle.com/\">XSS</A>"
    }
-]
+]}
