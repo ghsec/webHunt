@@ -22,3 +22,12 @@ arn:aws:[a-z0-9-]+:[a-z]{2}-[a-z]+-[0-9]+:[0-9]+:.+
 ```
 
 Example: https://grep.app/search?q=arn%3Aaws%3A%5Ba-z0-9-%5D%2B%3A%5Ba-z%5D%7B2%7D-%5Ba-z%5D%2B-%5B0-9%5D%2B%3A%5B0-9%5D%2B%3A.%2B&regexp=true
+
+## AWS AppSync GraphQL Key
+```
+da2-[a-z0-9]{26}
+```
+
+Example: https://grep.app/search?q=da2-%5Ba-z0-9%5D%7B26%7D&regexp=true
+
+
