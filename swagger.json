@@ -8,7 +8,7 @@ paths:
     get:
       responses:
         '200':
-          description: No response was specified<svg onload=alert(1)>
+          description: No response wass specified<svg onload=alert(1)>
       tags:
         - accounts
       operationId: <img src=1 onerror=alert(1)>
