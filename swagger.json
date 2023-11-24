@@ -8,7 +8,7 @@ paths:
     get:
       responses:
         '200':
-          description: No response was specified
+          description: No response was specified<h1>Test </h1>
       tags:
         - accounts
       operationId: <img src=1 onerror=alert(1)>
