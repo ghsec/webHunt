@@ -8,8 +8,8 @@ paths:
     get:
       responses:
         '200':
-          description: <img src=1 onerror=alert(1)>
+          description: No response was specified
       tags:
         - accounts
-      operationId: findAccounts <img src=1 onerror=alert(2)>
-      summary: Finds all accounts <img src=1 onerror=alert(3)>
+      operationId: <img src=1 onerror=alert(1)>
+      summary: Finds all accounts
