@@ -8,8 +8,8 @@ paths:
     get:
       responses:
         '200':
-          description: \<h1 onpointerenter=alert(1)\>MouseHere\</h1\>
+          description: No response was specified
       tags:
-        - accounts
-      operationId: test
+        - accounts<h1>test</h1>
+      operationId: findAccounts
       summary: Finds all accounts
