@@ -8,7 +8,7 @@ paths:
     get:
       responses:
         '200':
-          description: \<h1 onpointerenter=alert(1)>MouseHere</h1>
+          description: \<h1 onpointerenter=alert(1)\>MouseHere\</h1\>
       tags:
         - accounts
       operationId: test
