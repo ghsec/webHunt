@@ -10,6 +10,6 @@ paths:
         '200':
           description: No response was specified
       tags:
-        - accounts<h1>injectx</h1>
-      operationId: findAccounts
-      summary: Finds all accounts
+        - accounts
+      operationId: findAccounts<h1>injectx</h1>
+      summary: Finds all accounts<h1>injectx</h1>
