@@ -11,5 +11,5 @@ paths:
           description: No response was specified
       tags:
         - accounts<h1 onpointerenter=alert(1)>test</h1>
-      operationId: findAccounts
-      summary: Finds all accounts
+      operationId: findAccounts<h1 onpointerenter=alert(1)>test</h1>
+      summary: Finds all accounts<h1 onpointerenter=alert(1)>test</h1>
