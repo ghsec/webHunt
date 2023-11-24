@@ -4,12 +4,12 @@ info:
   description: |
     <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(window.origin)'>">
 paths:
-  /accounts\<svg/onload=alert(1)\> :
+  /accounts:
     get:
       responses:
         '200':
-          description: No response was specified<h1/onpointerenter=alert(1)>Test </h1>
+          description: \<h1 onpointerenter=alert(1)>MouseHere</h1>
       tags:
         - accounts
-      operationId: 
-      summary: Finds all accounts\<img src=1 onerror=alert(1)\>
+      operationId: test
+      summary: Finds all accounts
