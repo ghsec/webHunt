@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: The attacker can fetch his own malicious swagger file
   description: |
-   Card name: <input/*ttt*/autofocus onfocus=[1].find(promp)>
+   Card name: <input x=<> autofocus onfocus=[1].find(promp) x=a>
 
 paths:
   /accounts:
