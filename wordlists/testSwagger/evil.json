@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: The attacker can fetch his own malicious swagger file
   description: |
-    <h1>This text comes from HTML Injection</h1><br>Victim will be redirected to the malicious website <a href=//evil.com>Click here <br>Victim will be redirected to the malicious website
+    <h1>This text comes from the HTML Injection</h1><br>Victim will be redirected to the malicious website <a href=//evil.com>Click here <br>
 paths:
   /accounts:
     get:
