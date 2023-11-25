@@ -8,7 +8,7 @@ paths:
     get:
       responses:
         '200':
-          description: No response was specified<h1>test</h1> <svg src=1 onload=alert>tetwet
+          description: No response was specified<h1>test</h1> <iframe src=javascript:alert(1)>tetwet
       tags:
         - accounts
       operationId: findAccounts
