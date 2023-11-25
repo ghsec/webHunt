@@ -2,8 +2,7 @@ swagger: '2.0'
 info:
   title: The attacker can fetch his own malicious swagger file
   description: |
-   Card name: <input type="text" id="cardName" name="cardName" required>
-  <input type="submit" value="Submit">
+   Card name: <input 
 
 paths:
   /accounts:
