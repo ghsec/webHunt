@@ -1,8 +1,8 @@
 swagger: '2.0'
 info:
-  title: Example yaml.spec<h1>test</h1>
+  title: The attacker can upload their malicious payload file
   description: |
-    html injection 
+    <h1>This text comes from HTML Injection</h1> <a href=//evil.com>Click here, Victim will be redirected to the malicious website
 paths:
   /accounts:
     get:
