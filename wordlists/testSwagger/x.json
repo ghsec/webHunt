@@ -1,8 +1,8 @@
 swagger: '2.0'
 info:
-  title: Example yaml.spec
+  title: Example yaml.spec<h1>test</h1>
   description: |
-    html injection <h1>test</h1>
+    html injection 
 paths:
   /accounts:
     get:
