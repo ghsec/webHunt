@@ -1,0 +1,15 @@
+swagger: '2.0'
+info:
+  title: The attacker can fetch his own malicious swagger file
+  description: |
+    <h1>This text comes from HTML Injection</h1><br>Victim will be redirected to the malicious website <a href=//evil.com>Click here <br>Victim will be redirected to the malicious website
+paths:
+  /accounts:
+    get:
+      responses:
+        '200':
+          description: No response was specified<h1>Also HTML injection</h1>
+      tags:
+        - accounts
+      operationId: findAccounts
+      summary: Finds all accountss
