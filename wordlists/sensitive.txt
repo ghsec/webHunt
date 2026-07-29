@@ -1372,7 +1372,7 @@ derby.log
 dest1.log
 detail.log
 dev.log
-developement.log
+development.log
 development.log
 dfsmetrics.log
 django.log
