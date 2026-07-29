@@ -15,7 +15,7 @@ Change "domain.com" with your domain
 ### ~ SecurityTrails
 ```https://securitytrails.com/list/apex_domain/domain.com```
 
-### ~ Github
+### ~ GitHub
 ```https://github.com/search?q="domain.com"```
 
 ### ~ Censys
