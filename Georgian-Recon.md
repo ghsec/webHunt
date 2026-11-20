@@ -14,7 +14,7 @@
  
  5.[Assetfinder](https://github.com/tomnomnom/assetfinder)
  
- 6.[Github-Search](https://github.com/gwen001/github-search)
+ 6.[GitHub-Search](https://github.com/gwen001/github-search)
  
  7.[GoAltdns](https://github.com/subfinder/goaltdns)
  
